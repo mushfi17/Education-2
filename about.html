@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <a href="index.html"><img src="images/logo.png" class="logo"></a>
+    </div>
+    <section id="about">
+        <div class="about-left-col">
+            <img src="images/about.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Maiores ab eum reiciendis beatae iusto, ratione illo magnam
+                    quisquam enim nobis neque temporibus excepturi corrupti asperiores 
+                    tempora nihil dicta quibusdam itaque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Accusantium obcaecati neque voluptatibus fuga temporibus consequuntur omnis excepturi delectus sunt cupiditate.
+                </p><br></br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div><br>
+
+                <h2>"Learning is not attained by chance,it must be sought for with ardor and attended to with diligence"</h2>
+                <h3>-----Abigail Adams</h3>
+            </div>
+        </div>
+    </section>
+    <nav id="sideNav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="features.html">FEATURES</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="offer.html">OFFER</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBTN">
+
+    <!----------footer------------------------>
+
+    <section id="footer">
+        <div class="container footer-row">
+            <hr>
+            <div class="footer-left-col">
+                <div class="footer-links">
+                    <div class="link-title">
+                        <h4>Product</h4>
+                        <small>Our Plan</small><br>
+                        <small>Free Trial</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>About Us</h4>
+                        <small>Request Demo</small><br>
+                        <small>FAQs</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Support</h4>
+                        <small>Feature</small><br>
+                        <small>contact Us</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Explore</h4>
+                        <small>Find A Nonprofit</small><br>
+                        <small>Corporate Solution</small>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-col">
+                <div class="footer-info">
+                    <div class="copyright-text">
+                       <small>abc@gamil.com</small><br>
+                       <small>CopyRight &copy; 2022</small>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="images/logo.png">
+                        <button class="common-btn">English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------social icons------------>
+
+    <div class="social-icons">
+        <img src="images/facebook.png">
+        <img src="images/instagram.png">
+        <img src="images/twitter.png">
+        <img src="images/linkedin.png">
+    </div>
+
+    <script>
+        var menuBTN = document.getElementById("menuBTN");
+        var sideNav = document.getElementById("sideNav");
+    
+        sideNav.style.right = "-250px";
+        menuBTN.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px"; 
+            }
+        }
+    </script>
+
+</body>
